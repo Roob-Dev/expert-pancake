@@ -1,14 +1,13 @@
-import { useReducer } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
-function App() {
-  const [checked, toggle] = useReducer((checked) => !checked, false);
+//https://api.github.com/users/roob-dev
 
+function App() {
   return (
-    <>
-      <input type="checkbox" value={checked} onChange={toggle} />
-      <p>{checked ? "checked" : "not checked"}</p>
-    </>
+    <div>
+      <h1>Hello React Testing Library</h1>
+    </div>
   );
 }
 
